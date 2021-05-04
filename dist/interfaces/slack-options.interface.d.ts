@@ -1,7 +1,6 @@
 import { ModuleMetadata, Type } from "@nestjs/common/interfaces";
 export interface SlackConfigOptions {
     channel: string;
-    userName: string;
     token: string;
 }
 export interface SlackConfigOptionsFactory {

@@ -1,2 +1,3 @@
 import { SlackConfigOptions } from "../interfaces/slack-options.interface";
-export declare function createSlackClient(options: SlackConfigOptions): any;
+import { WebClient } from '@slack/web-api';
+export declare function createSlackClient(options: SlackConfigOptions): WebClient;
