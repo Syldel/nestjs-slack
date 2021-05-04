@@ -1,0 +1,1 @@
+{"version":3,"file":"slack.constants.js","sourceRoot":"/","sources":["common/slack.constants.ts"],"names":[],"mappings":";;;AAAa,QAAA,oBAAoB,GAAG,oBAAoB,CAAC;AAC5C,QAAA,WAAW,GAAG,YAAY,CAAC","sourcesContent":["export const SLACK_CONFIG_OPTIONS = 'SlackConfigOptions';\r\nexport const SLACK_TOKEN = 'SlackToken';"]}
