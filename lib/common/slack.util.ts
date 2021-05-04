@@ -1,14 +1,11 @@
 import { SlackConfigOptions } from "../interfaces/slack-options.interface";
 
-const { WebClient } = require('@slack/web-api');
+import { WebClient } from '@slack/web-api';
 
-export function createSlackClient(options: SlackConfigOptions): any {
-
-    console.log('createSlackClient options:', options)
+export function createSlackClient(options: SlackConfigOptions): WebClient {
 
     // An access token (from your Slack app or custom integration - xoxp, xoxb)
-    const token = process.env.SLACK_TOKEN;
+    // const token = process.env.SLACK_TOKEN;
 
-    const client = new WebClient(token);
-    return client;
+    return new WebClient(options.token);
 }

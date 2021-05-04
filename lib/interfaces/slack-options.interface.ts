@@ -1,16 +1,7 @@
 import { ModuleMetadata, Type } from "@nestjs/common/interfaces";
 
 export interface SlackConfigOptions {
-    /*
-    accessKeyId: string;
-    secretAccessKey: string;
-    region?: string;
-    sessionToken?: string;
-    apiVersion?: string;
-    maxSockets?: number;
-    */
     channel: string;
-    userName: string;
     token: string;
 }
 
