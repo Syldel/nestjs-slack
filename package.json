@@ -38,9 +38,6 @@
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.4"
   },
-  "dependencies": {
-    "@slack/web-api": "^6.1.0"
-  },
   "devDependencies": {
     "@nestjs/common": "7.6.15",
     "@nestjs/core": "7.6.15",
@@ -69,5 +66,8 @@
     },
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "@slack/web-api": "^6.1.0"
   }
 }
