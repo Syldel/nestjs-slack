@@ -29,6 +29,9 @@ let SlackService = class SlackService extends web_api_1.WebClient {
     constructor(options) {
         super(options.token);
         this.options = options;
+        if (!options.token) {
+            console.warn('SlackService => Token is not defined!');
+        }
     }
     publishMessage(text) {
         return __awaiter(this, void 0, void 0, function* () {

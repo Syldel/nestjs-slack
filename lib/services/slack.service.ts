@@ -10,6 +10,10 @@ export class SlackService extends WebClient {
         @Inject(SLACK_CONFIG_OPTIONS) private options: SlackConfigOptions
     ) {
         super(options.token);
+
+        if (!options.token) {
+            console.warn('SlackService => Token is not defined!');
+        }
     }
 
     // Post a message to a channel your app is in using ID and message text
